@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Agencia de Viajes</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./recursos/flamenco.png" alt="flamenco" class="icono">
+        <span class="titulo">Flamingo travel</span>
+        <img src="./recursos/bannerPaisaje.png" alt="paisaje" class="banner">
+    </div>
+
+    <form id="formulario">
+        <div class="form-group">
+            <label for="email">Correo de contacto</label>
+            <input type="email" class="form-control" id="email" placeholder="correo@electronico.com">
+        </div>
+        <div class="form-group">
+            <label for="asunto">Viaje de interés</label>
+            <input type="text" class="form-control" id="asunto" placeholder="Tu próximo viaje">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Consulta</label>
+            <textarea id="mensaje" type="text" class="form-control" placeholder="Tu consulta"></textarea>
+            <small>Sé lo más específico posible para que podamos ayudarte.</small>
+        </div>
+        <button type="submit" class="btn btn-consultar" disabled>Enviar consulta</button>
+        <div class="spinner d-none">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+        </div>
+    </form>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
